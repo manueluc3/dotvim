@@ -5,6 +5,7 @@ set number
 syntax on
 filetype plugin indent on
 
+let g:tagbar_sort = 0
 let g:tagbar_autofocus = 1
 autocmd FileType c,cpp nested :TagbarOpen
 nnoremap <silent> <F9> :TagbarOpen fj<CR>
