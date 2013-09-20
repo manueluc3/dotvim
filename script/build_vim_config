@@ -1,0 +1,14 @@
+#!/bin/zsh
+echo "cloning dotvim of manueluc3 with plugins and configuration"
+if [ -d "~/.vim" ]
+then
+	echo "Directory ~/.vim exists. We proceed to removed it"
+	rm -rf ~/.vim
+else
+	echo "Directory ~/.vim does not exists. We are going to create it"
+fi
+git clone git://github.com/manueluc3/dotvim.git ~/.vim
+cd ~/.vim
+git submodule init
+git submodule update
+echo "end of process"

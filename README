@@ -1,7 +1,8 @@
 Installation:
 
-
+MANUAL MODE
 	git clone git://github.com/manueluc3/dotvim.git ~/.vim
+	cd ~/.vim
 	git submodule init
 	git submodule update
 
@@ -9,4 +10,10 @@ Create symlinks:
 
 	ln -s ~/.vim/vimrc ~/.vimrc
 	ln -s ~/.vim/gvimrc ~/.gvimrc
+
+AUTOMATIC MODE
+	if you have zsh installed run build_vim_config inside script folder
+
+for more help goto
+	http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
 
